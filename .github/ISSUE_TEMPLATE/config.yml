@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Purchases, licenses and refunds
+    url: https://coolapps.fyi/support/
+    about: Write to support@coolapps.fyi with your order number. Never post license keys in an issue.
+  - name: AFK Warden docs
+    url: https://coolapps.fyi/plugins/afkwarden/
+    about: Installation, configuration, commands and FAQ.
+  - name: ChatShield docs
+    url: https://coolapps.fyi/plugins/chatshield/
+    about: Installation, configuration, the web panel, commands and FAQ.

@@ -1,0 +1,65 @@
+name: Bug report
+description: Something in AFK Warden or ChatShield does not work as documented.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. **Never paste license keys, passwords, tokens or your server's IP address here: issues are public.**
+        Purchases and licenses go to support@coolapps.fyi instead. English or Spanish, both are fine.
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      options:
+        - AFK Warden
+        - ChatShield
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: "AFK Warden: /version AFKWarden. ChatShield: /chatshield status."
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Server software and Minecraft version
+      placeholder: "Paper 1.21.11"
+    validations:
+      required: true
+  - type: input
+    id: java
+    attributes:
+      label: Java version
+      placeholder: "21"
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Free or Pro
+      options:
+        - Free
+        - Pro
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you expected, what happened instead, and the steps that make it happen again.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Console lines
+      description: The console lines around the problem, as text. For ChatShield, a /chatshield debug dump helps too (read it before you share it).
+      render: shell
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before you submit
+      options:
+        - label: I removed license keys, passwords, tokens and IP addresses from everything above.
+          required: true

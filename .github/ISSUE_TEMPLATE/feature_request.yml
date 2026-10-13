@@ -1,0 +1,25 @@
+name: Feature request
+description: An idea for AFK Warden or ChatShield.
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: plugin
+    attributes:
+      label: Plugin
+      options:
+        - AFK Warden
+        - ChatShield
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What you would like the plugin to do.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: The problem it solves on your server.
